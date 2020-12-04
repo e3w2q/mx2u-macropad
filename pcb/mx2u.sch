@@ -1,0 +1,280 @@
+EESchema Schematic File Version 4
+LIBS:mx2u-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "MX2U! Keyboard"
+Date ""
+Rev "1"
+Comp "@e3w2q"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR02
+U 1 1 5CE3BEE4
+P 1050 950
+F 0 "#PWR02" H 1050 700 50  0001 C CNN
+F 1 "GND" H 1050 800 50  0000 C CNN
+F 2 "" H 1050 950 50  0001 C CNN
+F 3 "" H 1050 950 50  0001 C CNN
+	1    1050 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5CE3BEEA
+P 1050 800
+F 0 "#FLG01" H 1050 875 50  0001 C CNN
+F 1 "PWR_FLAG" H 1050 950 50  0000 C CNN
+F 2 "" H 1050 800 50  0001 C CNN
+F 3 "" H 1050 800 50  0001 C CNN
+	1    1050 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5CE3BEF0
+P 700 950
+F 0 "#FLG02" H 700 1025 50  0001 C CNN
+F 1 "PWR_FLAG" H 700 1100 50  0000 C CNN
+F 2 "" H 700 950 50  0001 C CNN
+F 3 "" H 700 950 50  0001 C CNN
+	1    700  950 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1050 800  1050 950 
+Wire Wire Line
+	700  800  700  950 
+$Comp
+L power:VCC #PWR01
+U 1 1 5CE3E880
+P 700 800
+F 0 "#PWR01" H 700 650 50  0001 C CNN
+F 1 "VCC" H 717 973 50  0000 C CNN
+F 2 "" H 700 800 50  0001 C CNN
+F 3 "" H 700 800 50  0001 C CNN
+	1    700  800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR03
+U 1 1 5CE3F20D
+P 3950 850
+F 0 "#PWR03" H 3950 700 50  0001 C CNN
+F 1 "VCC" H 3967 1023 50  0000 C CNN
+F 2 "" H 3950 850 50  0001 C CNN
+F 3 "" H 3950 850 50  0001 C CNN
+	1    3950 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5CE4B3AC
+P 850 1700
+F 0 "#PWR05" H 850 1450 50  0001 C CNN
+F 1 "GND" H 850 1550 50  0000 C CNN
+F 2 "" H 850 1700 50  0001 C CNN
+F 3 "" H 850 1700 50  0001 C CNN
+	1    850  1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  1600 850  1700
+Text GLabel 850  1600 0    50   Input ~ 0
+GND
+Text GLabel 3600 1200 2    50   Input ~ 0
+GND
+NoConn ~ 3600 1000
+Wire Wire Line
+	3950 850  3950 1400
+Wire Wire Line
+	3600 1400 3950 1400
+$Comp
+L #library:BLEMicroPro U1
+U 1 1 5CE18F26
+P 2900 1850
+F 0 "U1" H 2900 3000 60  0000 C CNN
+F 1 "ProMicro/BLEMicroPro" H 2900 2850 60  0000 C CNN
+F 2 "#footprint:ArduinoProMicro_ConThrough" H 3000 800 60  0001 C CNN
+F 3 "" H 3000 800 60  0000 C CNN
+	1    2900 1850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3600 1100
+NoConn ~ 3600 1300
+NoConn ~ 2200 1000
+$Comp
+L #library:SW_Push SW1
+U 1 1 5F8174DF
+P 1750 1700
+F 0 "SW1" H 1750 1985 50  0000 C CNN
+F 1 "SW_Push" H 1750 1894 50  0000 C CNN
+F 2 "#footprint:CherryMX_MidHeight" H 1750 1900 50  0001 C CNN
+F 3 "" H 1750 1900 50  0001 C CNN
+	1    1750 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L #library:SW_Push SW2
+U 1 1 5F8179F7
+P 1750 2150
+F 0 "SW2" H 1750 2435 50  0000 C CNN
+F 1 "SW_Push" H 1750 2344 50  0000 C CNN
+F 2 "#footprint:CherryMX_MidHeight" H 1750 2350 50  0001 C CNN
+F 3 "" H 1750 2350 50  0001 C CNN
+	1    1750 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L #library:SW_Push SW3
+U 1 1 5F81C4B8
+P 1750 2600
+F 0 "SW3" H 1750 2885 50  0000 C CNN
+F 1 "SW_Push" H 1750 2794 50  0000 C CNN
+F 2 "#footprint:CherryMX_MidHeight" H 1750 2800 50  0001 C CNN
+F 3 "" H 1750 2800 50  0001 C CNN
+	1    1750 2600
+	1    0    0    -1  
+$EndComp
+Text GLabel 2200 1100 0    50   Input ~ 0
+led
+Text GLabel 2200 1300 0    50   Input ~ 0
+GND
+Text GLabel 2200 1400 0    50   Input ~ 0
+GND
+Wire Wire Line
+	2050 1700 2050 2150
+Wire Wire Line
+	2050 2150 1950 2150
+Connection ~ 2050 1700
+Wire Wire Line
+	2050 1700 1950 1700
+Wire Wire Line
+	2100 1800 2100 2600
+Wire Wire Line
+	2100 2600 1950 2600
+Wire Wire Line
+	2050 1700 2200 1700
+Wire Wire Line
+	2100 1800 2200 1800
+Text GLabel 1550 1700 0    50   Input ~ 0
+GND
+Text GLabel 1550 2150 0    50   Input ~ 0
+GND
+Text GLabel 1550 2600 0    50   Input ~ 0
+GND
+Text GLabel 3050 3100 2    50   Input ~ 0
+led
+Text GLabel 3050 3300 2    50   Input ~ 0
+GND
+Text GLabel 3850 3300 2    50   Input ~ 0
+GND
+Text GLabel 4650 3300 2    50   Input ~ 0
+GND
+NoConn ~ 2200 1200
+NoConn ~ 2200 1500
+NoConn ~ 2200 1600
+NoConn ~ 2200 1900
+NoConn ~ 2200 2000
+NoConn ~ 2200 2100
+NoConn ~ 2200 2200
+NoConn ~ 3600 1500
+NoConn ~ 3600 1600
+NoConn ~ 3600 1700
+NoConn ~ 3600 1800
+NoConn ~ 3600 1900
+NoConn ~ 3600 2000
+NoConn ~ 3600 2100
+NoConn ~ 3600 2200
+NoConn ~ 4250 3300
+$Comp
+L #library:YS_SK6812MINI_E L1
+U 1 1 5FB144F5
+P 2850 3200
+F 0 "L1" H 2850 3462 51  0000 C CNN
+F 1 "YS_SK6812MINI_E" H 2850 3397 16  0000 C CNN
+F 2 "#footprint:YS-SK6812MINI-E" H 2850 3200 60  0001 C CNN
+F 3 "" H 2850 3200 60  0001 C CNN
+	1    2850 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L #library:YS_SK6812MINI_E L2
+U 1 1 5FB156AD
+P 3650 3200
+F 0 "L2" H 3650 3462 51  0000 C CNN
+F 1 "YS_SK6812MINI_E" H 3650 3397 16  0000 C CNN
+F 2 "#footprint:YS-SK6812MINI-E" H 3650 3200 60  0001 C CNN
+F 3 "" H 3650 3200 60  0001 C CNN
+	1    3650 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L #library:YS_SK6812MINI_E L3
+U 1 1 5FB156EF
+P 4450 3200
+F 0 "L3" H 4450 3462 51  0000 C CNN
+F 1 "YS_SK6812MINI_E" H 4450 3397 16  0000 C CNN
+F 2 "#footprint:NeoPixcel_Diffused_5mm_Through_Hole_LED" H 4450 3200 60  0001 C CNN
+F 3 "" H 4450 3200 60  0001 C CNN
+	1    4450 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3300 2600 3300
+Wire Wire Line
+	2600 3300 2600 3400
+Wire Wire Line
+	3900 3400 3900 3100
+Wire Wire Line
+	3900 3100 3850 3100
+Wire Wire Line
+	2600 3400 3900 3400
+Wire Wire Line
+	3450 3300 3400 3300
+Wire Wire Line
+	3400 3300 3400 3450
+Wire Wire Line
+	3400 3450 4700 3450
+Wire Wire Line
+	4700 3450 4700 3100
+Wire Wire Line
+	4700 3100 4650 3100
+$Comp
+L power:VCC #PWR0101
+U 1 1 5FB1699E
+P 2600 2850
+F 0 "#PWR0101" H 2600 2700 50  0001 C CNN
+F 1 "VCC" H 2617 3023 50  0000 C CNN
+F 2 "" H 2600 2850 50  0001 C CNN
+F 3 "" H 2600 2850 50  0001 C CNN
+	1    2600 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2850 2600 2900
+Wire Wire Line
+	2600 3100 2650 3100
+Wire Wire Line
+	2600 2900 3400 2900
+Wire Wire Line
+	3400 2900 3400 3100
+Wire Wire Line
+	3400 3100 3450 3100
+Connection ~ 2600 2900
+Wire Wire Line
+	2600 2900 2600 3100
+Wire Wire Line
+	3400 2900 4200 2900
+Wire Wire Line
+	4200 2900 4200 3100
+Wire Wire Line
+	4200 3100 4250 3100
+Connection ~ 3400 2900
+$EndSCHEMATC
