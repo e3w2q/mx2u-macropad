@@ -23,5 +23,11 @@ Note: When using the 2U key, the backlight goes directly into your eyes!
 
 [Firmware](https://github.com/e3w2q/qmk_firmware/tree/e3w2q/keyboards/e3w2q/mx2u)
 
+[PCBの入手方法](doc/pcb_order_guide_jp.md)
+
+[パーツリスト](doc/bom_list_jp.md)
+
+[ビルドガイド](doc/readme_jp.md)
+
 ![mx2u2](doc/mx2u2.jpg)
 
